@@ -1,4 +1,5 @@
-def generate_subsets(char_set):
+def generate_subsets(k):
+    char_set = k.split()
     n = len(char_set)
     subsets = []
 
@@ -10,7 +11,7 @@ def generate_subsets(char_set):
         subsets.append(subset)
 
     for s in subsets:
-        print(s)
+       print(s)
 
-s = input('Ns:')
-print(generate_subsets(s))
+inp = input('Введіть символи через пробіл: ')
+generate_subsets(inp)
