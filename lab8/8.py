@@ -9,8 +9,6 @@ y = np.array(data['y'])
 X_train_test = np.array(data)
 mean_shift_cluster = MeanShift(bandwidth=8)
 mean_shift_cluster.fit(X_train_test)
-x = np.array(data['x'])
-y = np.array(data['y'])
 
 colors = mean_shift_cluster.labels_
 data['Cluster'] = colors
